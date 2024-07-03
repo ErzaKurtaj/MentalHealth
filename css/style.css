@@ -1,0 +1,736 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  z-index: 10;
+}
+
+.navbar img {
+  height: 60px;
+  width: 120px;
+}
+
+.navbar .nav-links {
+  display: flex;
+  color: #8f8a8a;
+  font-weight: bold;
+  align-items: center;
+}
+
+.navbar .nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #8f8a8a;
+  font-size: 16px;
+}
+
+.navbar .nav-links a:hover {
+  color: #C0A9BD;
+  cursor: pointer;
+}
+
+.navbar .login-btn {
+  background-color: #73605B;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 7px;
+  font-size: 17px;
+}
+
+.navbar .login-btn:hover {
+  background-color: #F4F2F3;
+  color:  #64766A;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  color: gray;
+  width: 450px;
+  top: 50px;
+  left: -100px;
+  border: 1px solid #ddd;
+}
+
+.dropdown-menu a {
+  color: #c7bdbd;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+/* New Styles for Intro Section */
+.intro-section {
+  padding: 20px;
+  height: 400px;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #ddd;
+}
+
+.intro-container {
+  display: flex;
+  align-items: center;
+}
+
+.intro-text {
+  flex: 1;
+  padding-right: 40px;
+  /* Add padding to create space between text and bubble */
+}
+
+.intro-text h1 {
+  margin: 0;
+  font-size: 28px;
+  font-size: 35px;
+  color: #C0A9BD;
+}
+
+.intro-text p {
+  margin: 10px 0 0;
+  font-size: 18px;
+  color: #8f8a8a;
+  font-family: Arial, Helvetica sans-serif;
+  margin-top: 25px;
+}
+
+
+
+.bubble {
+  flex: 0 0 200px;
+  height: 220px;
+  width: 100px;
+  margin-top:90px;
+  background-color:#C0A9BD;
+  color: black;
+  font-weight: bold;
+  border-radius: 50%;
+  margin-right: 40px;
+  display: flex;
+  margin-left: 170px;
+  margin-right: 200px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  animation: growShrink 9s infinite;
+}
+
+.bubble p {
+  margin: 0;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+}
+
+@keyframes growShrink {
+
+  0%,
+  100% {
+    transform: scale(1);
+    background-color: #C0A9BD;
+  }
+
+  50% {
+    transform: scale(1.5);
+    background-color:#d5bdaf;
+  }
+}
+
+
+/* Styles for the section containing the feeling prompt */
+.feeling-section {
+  padding: 20px;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Styles for the container within the section */
+.feeling-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for the dropdown content */
+.dropdown-content {
+  position: relative;
+  display: inline-block;
+}
+
+/* Styles for the prompt text */
+.how {
+  font-size: 50px;
+  color:#555555;
+  margin-top: 100px;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the prompt text */
+.how:hover {
+  background-color: #f9f9f9;
+  /* Slightly darker background on hover */
+}
+
+
+.hidden {
+  display: none;
+}
+
+
+.message {
+  margin-top: 10px; /* Adjust as needed */
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+
+/* Tabs Section */
+/* Tabs Section */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  background-color: #fff;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  margin: 0 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #C0A9BD;
+  font-size: 20px;
+}
+
+.tab-button:hover, .tab-button:focus {
+  border-bottom: 8px solid #C0A9BD;
+  outline: none;
+}
+
+.tab-content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.tab {
+  display: none;
+  text-align: left;
+  width: 100%;
+  max-width: 100%;
+}
+
+.tab ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tab ul li {
+  margin: 10px 0;
+  font-size: 28px;
+  margin-top: 30px;
+  margin-left: 30px;
+  color: #8f8a8a;
+  text-align: center;
+  height: 45px;
+
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.tab ul li:hover{
+  background-color: #F4F2F3;
+  color:  #64766A;
+  padding-top: 10px;
+}
+tab ul li a:hover{
+  color:  #64766A;
+}
+.tab-content a[href="angry.html"]{
+  color:  #8f8a8a;
+  text-decoration: none;
+}
+.tab-content a[href="angry.html"]:hover {
+  background-color: #F4F2F3;
+  color:#64766A;
+}
+
+
+
+
+/* Help Section */
+.help-section {
+  background-color: #C0A9BD;
+  padding: 40px 20px;
+  color: white;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.help-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.help-text {
+  flex: 1;
+}
+
+.help-text h2 {
+  margin: 0;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.help-info {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.help-info p {
+  margin: 0 0 10px;
+  font-size: 19px;
+  color: #F4F2F3;
+}
+
+.help-btn {
+  background-color: #F4F2F3;
+  color:  #64766A;
+  margin-top: 30px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.help-btn:hover{
+  background-color: #d1cbcb;
+  color: white;
+}
+
+
+
+/* Footer */
+.footer {
+  background-color: #F4F2F3;
+  color:  #64766A;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  margin-top: 0;
+}
+
+.footer-section p,
+.footer-section ul {
+  margin: 10px 0;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color:  #64766A;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid #555;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+
+
+.photo-container {
+  display: flex;
+  align-items: center;
+}
+
+.photo-text img {
+  max-width: 100%;
+  height: auto;
+}
+
+.textt {
+  margin-left: 60px; /* Adjust as necessary for spacing */
+  font-size: 28px;
+  color: #64766A;
+}
+
+.photo {
+  padding: 20px; /* Add padding to the section if needed */
+}
+
+
+@keyframes continuousSlide {
+  0% {
+      transform: translateX(-100%);
+  }
+  50% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+.animated-photo {
+  animation: continuousSlide 5s linear infinite; /* Adjust duration and easing as needed */
+}
+
+
+
+#angryMessage p {
+  font-family: Arial, sans-serif; 
+  font-size: 20px; 
+  line-height: 1.5; 
+  margin: 10px 0; 
+  text-align: center;
+  padding: 10px; 
+  text-decoration: none;
+  width:100%;
+  color:  #64766A;
+}
+
+#anxiousMessage p {
+  font-family: Arial, sans-serif; 
+  font-size: 20px; 
+  line-height: 1.5; 
+  margin: 10px 0; 
+  padding: 10px; 
+  text-align: center;
+  text-decoration: none;
+  width:100%;
+  color:  #64766A;
+}
+
+#sadMessage p {
+  font-family: Arial, sans-serif; 
+  font-size: 20px; 
+  line-height: 1.5; 
+  margin: 10px 0; 
+  padding: 10px; 
+  text-align: center;
+  text-decoration: none;
+  width:100%;
+  color:  #64766A;
+}
+
+#hopelessMessage{
+  font-family: Arial, sans-serif; 
+  font-size: 20px; 
+  line-height: 1.5; 
+  margin: 10px 0; 
+  padding: 10px; 
+  text-align: center;
+  text-decoration: none;
+  width:100%;
+  color:  #64766A;
+}
+
+#lonelyMessage{
+  font-family: Arial, sans-serif; 
+  font-size: 20px; 
+  line-height: 1.5; 
+  margin: 10px 0; 
+  padding: 10px; 
+  text-align: center;
+  text-decoration: none;
+  width:100%;
+  color:  #64766A
+}
+
+#weirdMessage{
+  font-family: Arial, sans-serif; 
+  font-size: 20px; 
+  line-height: 1.5; 
+  margin: 10px 0; 
+  padding: 10px; 
+  text-align: center;
+  text-decoration: none;
+  width:100%;
+  color:  #64766A
+}
+
+#stressedMessage{
+  font-family: Arial, sans-serif; 
+  font-size: 20px; 
+  line-height: 1.5; 
+  margin: 10px 0; 
+  padding: 10px; 
+  text-align: center;
+  text-decoration: none;
+  width:100%;
+  color:  #64766A
+}
+
+#unfittingMessage{
+  font-family: Arial, sans-serif; 
+  font-size: 20px; 
+  line-height: 1.5; 
+  margin: 10px 0; 
+  padding: 10px; 
+  text-align: center;
+  text-decoration: none;
+  width:100%;
+  color:  #64766A
+}
+
+#abuseMessage{
+  font-family: Arial, sans-serif; 
+  font-size: 20px; 
+  line-height: 1.5; 
+  margin: 10px 0; 
+  padding: 10px; 
+  text-align: center;
+  text-decoration: none;
+  width:100%;
+  color:  #64766A
+}
+
+#breakupMessage{
+  font-family: Arial, sans-serif; 
+  font-size: 20px; 
+  line-height: 1.5; 
+  margin: 10px 0; 
+  padding: 10px; 
+  text-align: center;
+  text-decoration: none;
+  width:100%;
+  color:  #64766A
+}
+
+#lossMessage{
+  font-family: Arial, sans-serif; 
+  font-size: 20px; 
+  line-height: 1.5; 
+  text-align: center;
+  margin: 10px 0; 
+  padding: 10px; 
+  text-decoration: none;
+  width:100%;
+  color:  #64766A
+}
+
+#socialMediaMessage{
+  font-family: Arial, sans-serif; 
+  font-size: 20px; 
+  line-height: 1.5; 
+  text-align: center;
+  margin: 10px 0; 
+  padding: 10px; 
+  text-decoration: none;
+  width:100%;
+  color:  #64766A
+}
+
+#discriminationMessage{
+  font-family: Arial, sans-serif; 
+  font-size: 20px; 
+  text-align: center;
+  line-height: 1.5; 
+  margin: 10px 0; 
+  padding: 10px; 
+  text-decoration: none;
+  width:100%;
+  color:  #64766A
+}
+
+#suicidalThoughtsMessage{
+  font-family: Arial, sans-serif; 
+  font-size: 20px; 
+  line-height: 1.5; 
+  text-align: center;
+  margin: 10px 0; 
+  padding: 10px; 
+  text-decoration: none;
+  width:100%;
+  color:  #64766A
+}
+
+#selfInjuryMessage{
+  font-family: Arial, sans-serif; 
+  font-size: 20px; 
+  text-align: center;
+  line-height: 1.5; 
+  margin: 10px 0; 
+  padding: 10px; 
+  text-decoration: none;
+  width:100%;
+  color:  #64766A
+}
+
+#traumaMessage{
+  font-family: Arial, sans-serif; 
+  font-size: 20px; 
+  line-height: 1.5; 
+  margin: 10px 0; 
+  text-align: center;
+  padding: 10px; 
+  text-decoration: none;
+  width:100%;
+  color:  #64766A
+}
+
+#moneyProblemsMessage{
+  font-family: Arial, sans-serif; 
+  font-size: 20px; 
+  text-align: center;
+  line-height: 1.5; 
+  margin: 10px 0; 
+  padding: 10px; 
+  text-decoration: none;
+  width:100%;
+  color:  #64766A
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .navbar .nav-links {
+    display: flex;
+  }
+  .navbar .login-btn {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bubble {
+    max-width: 50%;
+  }
+}
+
+
+
+/* Show/hide nav links and login button on smaller screens */
+@media screen and (min-width: 768px) {
+  .navbar .nav-links {
+    display: flex;
+  } /* Close the CSS rule for .nav-links */
+  
+  .navbar .login-btn {
+    display: block;
+  } /* Close the CSS rule for .login-btn */
+}
+
+@media (min-width: 768px) {
+  .intro-container {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .intro-container {
+      flex-direction: column;
+  }
+
+  .intro-text, .bubble {
+      margin-bottom: 20px;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nav-links a, .login-btn {
+      margin: 5px 0;
+  }
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .intro-container, .feeling-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .intro-text, .bubble, .dropdown-content {
+      margin: 10px 0;
+      text-align: center;
+  }
+}
+

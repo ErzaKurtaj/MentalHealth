@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Disorders</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+          <img src="images/logo.jpeg" alt="MentalHealth.com">
+      </div>
+      <div class="nav-links">
+          <div class="dropdown">
+            <a href="index.html"> Home</a>
+              <a href="blog.html" class="dropdown-toggle">Community</a>
+              <div class="dropdown-menu">
+                  <div class="dropdown-column">
+                      <a href="#">About Us</a>
+                      <a href="#">Social</a>
+                  </div>
+                  <div class="dropdown-column">
+                      <a href="#">Blog</a>
+                      <a href="#">Medical Reviewers</a>
+                  </div>
+                  <div class="dropdown-column">
+                      <a href="#">News</a>
+                      <a href="#">Editorial Team</a>
+                  </div>
+              </div>
+          </div>
+          <div class="dropdown">
+              <a href="integrity.html" class="dropdown-toggle">Content Integrity</a>
+              <div class="dropdown-menu">
+                  <div class="dropdown-column">
+                      <a href="#">Accessibility Statement</a>
+                      <a href="#">Medical Affairs</a>
+                  </div>
+                  <div class="dropdown-column">
+                      <a href="#">Advertising Policy</a>
+                      <a href="#">Publishing</a>
+                  </div>
+                  <div class="dropdown-column">
+                      <a href="#">Editorial Policy</a>
+                      <a href="#">Write for Us</a>
+                  </div>
+              </div>
+          </div>
+          <div class="dropdown">
+              <a href="info.html" class="dropdown-toggle">Mental Health Info</a>
+              <div class="dropdown-menu">
+                  <div class="dropdown-column">
+                      <a href="#" id="anxiety-link">Anxiety Disorders</a>
+                      <a href="#" id="mood-link">Mood Disorders</a>
+                      <a href="#" id="psychotic-link">Psychotic Disorders</a>
+                      <a href="#">Medication Info</a>
+                  </div>
+                  <div class="dropdown-column">
+                      <a href="#">Childhood Disorders</a>
+                      <a href="#">Cognitive Disorders</a>
+                      <a href="#">Sleep Disorders</a>
+                  </div>
+                  <div class="dropdown-column">
+                      <a href="#">Eating Disorders</a>
+                      <a href="#">Personality Disorders</a>
+                      <a href="#">Substance Related Disorders</a>
+                  </div>
+              </div>
+          </div>
+          <div class="dropdown">
+              <a href="therapy.html" class="dropdown-toggle">Therapy</a>
+              <div class="dropdown-menu">
+                  <div class="dropdown-column">
+                      <a href="#">Cognitive Behavioral Therapy (CBT)</a>
+                      <a href="#">Dialectical Behavior Therapy (DBT)</a>
+                  </div>
+                  <div class="dropdown-column">
+                      <a href="#">Integrative Therapy</a>
+                      <a href="#">Humanistic Therapy</a>
+                  </div>
+                  <div class="dropdown-column">
+                      <a href="#">Psychodynamic Therapy</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <a href="#" class="login-btn">Log in</a>
+  </nav>
+  </header>
+<section class="intro-section">
+    <div class="intro-container">
+        <div class="intro-text">
+            <h1>We all have mental health</h1>
+            <p>Mental health is an essential part of our overall well-being, impacting how we think, feel, and act. It influences our ability to handle stress, relate to others, and make decisions.</p>
+            <p>Remember, it's okay to ask for help and prioritize your mental health, 
+                you are not alone, and taking action today can lead to a brighter tomorrow.</p>
+        </div>
+        <div class="bubble">
+            <p> Breath In!</p>
+        </div>
+    </div>
+</section>
+<section class="feeling-section">
+    <div class="feeling-container">
+        <div class="dropdown-content">
+            <p class="how">How are you doing?</p>
+        </div>
+    </div>
+</section>
+<div id="content-section">
+    <div class="tabs">
+      <button class="tab-button" onclick="showFeelings()">I'M FEELING</button>
+      <button class="tab-button" onclick="showExperiences()">I'M EXPERIENCING</button>
+    </div>
+    <div id="feelings" class="tab hidden">
+      <ul>
+        <li id="angryItem">Angry</li>
+        <div id="angryMessage" class="message hidden">
+          <p>It's okay to feel angry. Take deep breaths and try to understand what's causing your anger. Talking to someone you trust can also help.</p>
+      </div>
+        <li id="anxiousItem">Anxious</li>
+        <div id="anxiousMessage" class="message hidden">
+          <p>Feeling anxious is normal. Try relaxation techniques like deep breathing or mindfulness. Reach out to a friend or professional if you need support.</p>
+      </div>
+        <li id="sadItem">Sad</li>
+        <div id="sadMessage" class="message hidden">
+          <p>It's okay to feel sad sometimes. Allow yourself to feel your emotions and talk to someone you trust about how you're feeling.</p>
+      </div>
+        <li id="hopelessItem">Hopeless</li>
+        <div id="hopelessMessage" class="message hidden">
+          <p>When feeling hopeless, it's important to remember that this feeling is temporary. Reach out to someone you trust for support.</p>
+      </div>
+        <li id="lonelyItem">Lonely</li>
+        <div id="lonelyMessage" class="message hidden">
+          <p>Feeling lonely is tough. Try reaching out to friends or family, or engage in activities that you enjoy and that connect you with others.</p>
+      </div>
+        <li id="weirdItem">Weird</li>
+        <div id="weirdMessage" class="message hidden">
+          <p>It's okay to feel weird or different. Embrace your uniqueness and remember that everyone feels this way at times.</p>
+      </div>
+        <li id="stressedItem">Stressed</li>
+        <div id="stressedMessage" class="message hidden">
+          <p>Stress is a common experience. Practice stress-relief techniques like exercise, meditation, or talking to a friend.</p>
+      </div>
+        <li id="unfittingItem">Unfitting</li>
+        <div id="unfittingMessage" class="message hidden">
+          <p>Feeling unfitting can be challenging. Remember that you are valuable and belong. Seek out supportive communities and activities.</p>
+      </div>
+      </ul>
+  </div>
+</div>
+      <div id="experiences" class="tab hidden">
+        <ul>
+          <li id="abuseItem">Abuse</li>
+          <div id="abuseMessage" class="message hidden">
+            <p>Abuse is serious. Reach out to a trusted person or professional for support. You don't have to face it alone.</p>
+        </div>
+          <li id="breakupItem">Breakup</li>
+          <div id="breakupMessage" class="message hidden">
+            <p>Breakups can be tough. Allow yourself to grieve and take time for self-care. Talk to friends or a counselor if needed.</p>
+        </div>
+          <li id="lossItem">Loss</li>
+          <div id="lossMessage" class="message hidden">
+            <p>Dealing with loss is hard. It's important to grieve and seek support from loved ones or a professional.</p>
+        </div>
+          <li id="socialMediaItem">Social Media Issues</li>
+          <div id="socialMediaMessage" class="message hidden">
+            <p>Social media issues can affect your mental health. Take breaks and talk to someone if it becomes overwhelming.</p>
+        </div>
+          <li id="discriminationItem">Discrimination</li>
+          <div id="discriminationMessage" class="message hidden">
+            <p>Discrimination is painful and unfair. Reach out for support and know your rights. You're not alone in this.</p>
+        </div>
+          <li id="suicidalThoughtsItem">Suicidal Thoughts</li>
+          <div id="suicidalThoughtsMessage" class="message hidden">
+            <p>If you're experiencing suicidal thoughts, seek immediate help from a trusted person or crisis hotline. Your life matters.</p>
+        </div>
+          <li id="selfInjuryItem">Self-injury</li>
+          <div id="selfInjuryMessage" class="message hidden">
+            <p>Self-injury is a serious issue. Please reach out for professional help to find healthier ways to cope.</p>
+        </div>
+          <li id="traumaItem">Trauma</li>
+          <div id="traumaMessage" class="message hidden">
+            <p>Trauma can deeply affect you. Seeking professional support can help you process and heal from traumatic experiences.</p>
+        </div>
+          <li id="moneyProblemsItem">Money Problems</li>
+          <div id="moneyProblemsMessage" class="message hidden">
+            <p>Money problems can cause a lot of stress. Seek financial advice and talk to someone you trust for support.</p>
+        </div>
+        </ul>
+    </div>
+    <div id="abuseMessage" class="message hidden">
+      <p>Here's how to handle abuse...</p>
+  </div>
+    </div>
+  </div>
+
+  <section class="photo">
+    <div class="photo-container">
+        <div class="photo-text">
+          <img src="images/intro.jpg" alt="Mental Health" class="animated-photo">
+        </div>
+        <div class="textt">
+            <p>Mental Health matters.</p>
+            <p>It's not embarrassing talking about your feelings.</p>
+        </div>
+    </div>
+</section>
+  <div class="help-section">
+    <div class="help-container">
+      <div class="help-text">
+        <h2>NEED HELP NOW?</h2>
+      </div>
+      <div class="help-info">
+        <p class="end">If you’re struggling and need to talk to someone, you are not alone. There are many free, confidential resources available 24/7.</p>
+        <a href="help.html" class="help-btn">GET HELP</a>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: contact@example.com</p>
+        <p>Phone: (123) 456-7890</p>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <ul class="social-links">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Mental Health.com. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

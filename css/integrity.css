@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  z-index: 10;
+}
+
+.navbar img {
+  height: 60px;
+  width: 120px;
+}
+
+.navbar .nav-links {
+  display: flex;
+  color: #8f8a8a;
+  font-weight: bold;
+  align-items: center;
+}
+
+.navbar .nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #8f8a8a;
+  font-size: 16px;
+}
+
+.navbar .nav-links a:hover {
+  color: #C0A9BD;
+  cursor: pointer;
+}
+
+.navbar .login-btn {
+  background-color: #73605B;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 7px;
+  font-size: 17px;
+}
+
+.navbar .login-btn:hover {
+  background-color: #F4F2F3;
+  color:  #64766A;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  color: gray;
+  width: 450px;
+  top: 100%; /* Adjusted from top: 50px; */
+  left: 0;
+  border: 1px solid #ddd;
+}
+
+.dropdown-menu a {
+  color: #c7bdbd;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+/* Rest of your CSS remains unchanged */
+
+
+
+
+/* Content Styles */
+.content {
+  padding: 20px;
+}
+
+.content-integrity {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content-integrity h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.content-integrity h2 {
+  font-size: 24px;
+  color: #555;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.content-integrity p {
+  color: #777;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content-integrity ul li{
+  position: relative;
+  padding: 15px 20px;
+  margin: 10px 0;
+  background: linear-gradient(45deg, #c59d9d, #C0A9BD, #C3CBD6);
+  background-size: 200% 200%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, background-position 0.5s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+ul li:hover {
+  transform: scale(1.05);
+  background-position: right center;
+}
+
+ul li:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+ul li:hover:before {
+  opacity: 1;
+}
+
+ul li strong {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+ol {
+  list-style: none;
+  counter-reset: li-counter;
+  padding: 0;
+}
+
+ol li {
+  position: relative;
+  padding: 15px 20px;
+  margin: 10px 0;
+  background: linear-gradient(45deg, #F4F2F3, #94A7AE, #64766A);
+  background-size: 200% 200%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, background-position 0.5s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+ol li:hover {
+  transform: scale(1.05);
+  background-position: right center;
+}
+
+ol li:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+ol li:hover:before {
+  opacity: 1;
+}
+
+ol li strong {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+.content-integrity a {
+  color: #0a2a6e;
+}
+
+.content-integrity a:hover {
+  text-decoration: underline;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #F4F2F3;
+  color:  #64766A;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  margin-top: 0;
+}
+
+.footer-section p,
+.footer-section ul {
+  margin: 10px 0;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color:  #64766A;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid #555;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+
+
+/* Text animation */
+.content-integrity p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  animation: bounceText 1s ease infinite alternate;
+}
+
+
+.amazing-header {
+  font-family: 'Arial', sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  padding: 20px 40px;
+  margin: 20px 0;
+  margin-top: 20px;
+  background: linear-gradient(45deg, #F7F3F5, #E2C2B3, #C3A6A0);
+  background-size: 200% 200%;
+  animation: gradientAnimation 5s ease infinite;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.amazing-header:before, .amazing-header:after {
+  content: '';
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  width: 140%;
+  height: 140%;
+  background: rgba(153, 51, 51, 0.1);
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+  animation: shineAnimation 2s ease infinite;
+}
+
+.amazing-header:after {
+  left: auto;
+  right: -20%;
+  animation-delay: 1s;
+}
+
+.amazing-header:hover:before, .amazing-header:hover:after {
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes shineAnimation {
+  0% {
+    transform: translateX(-50%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(50%) rotate(45deg);
+  }
+}
+
+
+
+@keyframes bounceText {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+
